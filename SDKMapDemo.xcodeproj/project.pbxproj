@@ -13,7 +13,26 @@
 		F27E4E5423B8C7E5007E26D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27E4E5223B8C7E5007E26D3 /* Main.storyboard */; };
 		F27E4E5623B8C7E6007E26D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27E4E5523B8C7E6007E26D3 /* Assets.xcassets */; };
 		F27E4E5923B8C7E6007E26D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27E4E5723B8C7E6007E26D3 /* LaunchScreen.storyboard */; };
+		F27E4E6223B8C8B6007E26D3 /* SAPFiori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27E4E6123B8C8B6007E26D3 /* SAPFiori.framework */; };
+		F27E4E6323B8C8B6007E26D3 /* SAPFiori.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F27E4E6123B8C8B6007E26D3 /* SAPFiori.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F27E4E6623B8CEA4007E26D3 /* SAPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27E4E6523B8CEA4007E26D3 /* SAPCommon.framework */; };
+		F27E4E6723B8CEA4007E26D3 /* SAPCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F27E4E6523B8CEA4007E26D3 /* SAPCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F27E4E6423B8C8B6007E26D3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F27E4E6723B8CEA4007E26D3 /* SAPCommon.framework in Embed Frameworks */,
+				F27E4E6323B8C8B6007E26D3 /* SAPFiori.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F27E4E4923B8C7E5007E26D3 /* SDKMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +43,8 @@
 		F27E4E5523B8C7E6007E26D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F27E4E5823B8C7E6007E26D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F27E4E5A23B8C7E6007E26D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F27E4E6123B8C8B6007E26D3 /* SAPFiori.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAPFiori.framework; path = "../SAP iOS SDK Framework/Release-fat/SAPFiori.framework"; sourceTree = "<group>"; };
+		F27E4E6523B8CEA4007E26D3 /* SAPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAPCommon.framework; path = "../SAP iOS SDK Framework/Release-fat/SAPCommon.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27E4E6623B8CEA4007E26D3 /* SAPCommon.framework in Frameworks */,
+				F27E4E6223B8C8B6007E26D3 /* SAPFiori.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,7 @@
 			children = (
 				F27E4E4B23B8C7E5007E26D3 /* SDKMapDemo */,
 				F27E4E4A23B8C7E5007E26D3 /* Products */,
+				F27E4E6023B8C8B6007E26D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +91,15 @@
 			path = SDKMapDemo;
 			sourceTree = "<group>";
 		};
+		F27E4E6023B8C8B6007E26D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F27E4E6523B8CEA4007E26D3 /* SAPCommon.framework */,
+				F27E4E6123B8C8B6007E26D3 /* SAPFiori.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +110,7 @@
 				F27E4E4523B8C7E5007E26D3 /* Sources */,
 				F27E4E4623B8C7E5007E26D3 /* Frameworks */,
 				F27E4E4723B8C7E5007E26D3 /* Resources */,
+				F27E4E6423B8C8B6007E26D3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +236,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"/Users/alisdair/Documents/Development/iOS/SAP iOS SDK Framework/Release-fat\"";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -217,6 +252,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -262,6 +298,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"/Users/alisdair/Documents/Development/iOS/SAP iOS SDK Framework/Release-fat\"";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -271,6 +308,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
