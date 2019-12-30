@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21F30EA23B9BCF100D7C55C /* FaunaOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21F30E923B9BCF100D7C55C /* FaunaOverlay.swift */; };
 		F27E4E4D23B8C7E5007E26D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E4E4C23B8C7E5007E26D3 /* AppDelegate.swift */; };
 		F27E4E4F23B8C7E5007E26D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E4E4E23B8C7E5007E26D3 /* SceneDelegate.swift */; };
-		F27E4E5123B8C7E5007E26D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E4E5023B8C7E5007E26D3 /* ViewController.swift */; };
 		F27E4E5423B8C7E5007E26D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27E4E5223B8C7E5007E26D3 /* Main.storyboard */; };
 		F27E4E5623B8C7E6007E26D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27E4E5523B8C7E6007E26D3 /* Assets.xcassets */; };
 		F27E4E5923B8C7E6007E26D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27E4E5723B8C7E6007E26D3 /* LaunchScreen.storyboard */; };
@@ -17,6 +17,8 @@
 		F27E4E6323B8C8B6007E26D3 /* SAPFiori.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F27E4E6123B8C8B6007E26D3 /* SAPFiori.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F27E4E6623B8CEA4007E26D3 /* SAPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F27E4E6523B8CEA4007E26D3 /* SAPCommon.framework */; };
 		F27E4E6723B8CEA4007E26D3 /* SAPCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F27E4E6523B8CEA4007E26D3 /* SAPCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F27E4E6923B955BE007E26D3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E4E6823B955BE007E26D3 /* MapViewController.swift */; };
+		F27E4E6B23B958A8007E26D3 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27E4E6A23B958A8007E26D3 /* MapModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,16 +37,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F21F30E923B9BCF100D7C55C /* FaunaOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaunaOverlay.swift; sourceTree = "<group>"; };
 		F27E4E4923B8C7E5007E26D3 /* SDKMapDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKMapDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27E4E4C23B8C7E5007E26D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F27E4E4E23B8C7E5007E26D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F27E4E5023B8C7E5007E26D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F27E4E5323B8C7E5007E26D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F27E4E5523B8C7E6007E26D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F27E4E5823B8C7E6007E26D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F27E4E5A23B8C7E6007E26D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F27E4E6123B8C8B6007E26D3 /* SAPFiori.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAPFiori.framework; path = "../SAP iOS SDK Framework/Release-fat/SAPFiori.framework"; sourceTree = "<group>"; };
 		F27E4E6523B8CEA4007E26D3 /* SAPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SAPCommon.framework; path = "../SAP iOS SDK Framework/Release-fat/SAPCommon.framework"; sourceTree = "<group>"; };
+		F27E4E6823B955BE007E26D3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F27E4E6A23B958A8007E26D3 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +86,13 @@
 			children = (
 				F27E4E4C23B8C7E5007E26D3 /* AppDelegate.swift */,
 				F27E4E4E23B8C7E5007E26D3 /* SceneDelegate.swift */,
-				F27E4E5023B8C7E5007E26D3 /* ViewController.swift */,
 				F27E4E5223B8C7E5007E26D3 /* Main.storyboard */,
 				F27E4E5523B8C7E6007E26D3 /* Assets.xcassets */,
 				F27E4E5723B8C7E6007E26D3 /* LaunchScreen.storyboard */,
 				F27E4E5A23B8C7E6007E26D3 /* Info.plist */,
+				F27E4E6823B955BE007E26D3 /* MapViewController.swift */,
+				F27E4E6A23B958A8007E26D3 /* MapModel.swift */,
+				F21F30E923B9BCF100D7C55C /* FaunaOverlay.swift */,
 			);
 			path = SDKMapDemo;
 			sourceTree = "<group>";
@@ -172,9 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F27E4E5123B8C7E5007E26D3 /* ViewController.swift in Sources */,
+				F27E4E6B23B958A8007E26D3 /* MapModel.swift in Sources */,
 				F27E4E4D23B8C7E5007E26D3 /* AppDelegate.swift in Sources */,
 				F27E4E4F23B8C7E5007E26D3 /* SceneDelegate.swift in Sources */,
+				F21F30EA23B9BCF100D7C55C /* FaunaOverlay.swift in Sources */,
+				F27E4E6923B955BE007E26D3 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
